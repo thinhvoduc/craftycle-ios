@@ -8,13 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2566A4532083A41000775154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4522083A41000775154 /* AppDelegate.swift */; };
-		2566A4552083A41000775154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4542083A41000775154 /* ViewController.swift */; };
+		2566A4552083A41000775154 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4542083A41000775154 /* MainTabBarController.swift */; };
 		2566A4582083A41000775154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2566A4562083A41000775154 /* Main.storyboard */; };
 		2566A45B2083A41000775154 /* Craftycle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4592083A41000775154 /* Craftycle.xcdatamodeld */; };
 		2566A45D2083A41100775154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2566A45C2083A41100775154 /* Assets.xcassets */; };
 		2566A4602083A41100775154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2566A45E2083A41100775154 /* LaunchScreen.storyboard */; };
 		2566A46B2083A41100775154 /* CraftycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A46A2083A41100775154 /* CraftycleTests.swift */; };
 		2566A4762083A41100775154 /* CraftycleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4752083A41100775154 /* CraftycleUITests.swift */; };
+		2587873B2086C246009EADC9 /* BaseWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587873A2086C246009EADC9 /* BaseWebService.swift */; };
+		2587873D2086C3F2009EADC9 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587873C2086C3F2009EADC9 /* BaseResponse.swift */; };
+		2587873F2086C5F6009EADC9 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587873E2086C5F6009EADC9 /* CategoryService.swift */; };
+		258787422086C63E009EADC9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258787412086C63E009EADC9 /* Category.swift */; };
+		258787442086C6BA009EADC9 /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258787432086C6BA009EADC9 /* WebServiceError.swift */; };
+		258787462086C7AE009EADC9 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258787452086C7AE009EADC9 /* BaseRequest.swift */; };
+		258787482086CE70009EADC9 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258787472086CE70009EADC9 /* CategoryViewController.swift */; };
+		2587874C2086CF28009EADC9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587874A2086CF28009EADC9 /* Image.swift */; };
+		2587874F2086CF99009EADC9 /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */; };
+		25F47C0520868BFB00F6CB8D /* AuthenticatedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */; };
+		25F47C0620868BFB00F6CB8D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0020868BFB00F6CB8D /* Request.swift */; };
+		25F47C0720868BFB00F6CB8D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0120868BFB00F6CB8D /* Response.swift */; };
+		25F47C0820868BFB00F6CB8D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0220868BFB00F6CB8D /* Service.swift */; };
+		25F47C0920868BFB00F6CB8D /* WebServiceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0320868BFB00F6CB8D /* WebServiceExtensions.swift */; };
+		25F47C0A20868BFB00F6CB8D /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0420868BFB00F6CB8D /* ServiceConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +52,7 @@
 /* Begin PBXFileReference section */
 		2566A44F2083A41000775154 /* Craftycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Craftycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566A4522083A41000775154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2566A4542083A41000775154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2566A4542083A41000775154 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		2566A4572083A41000775154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2566A45A2083A41000775154 /* Craftycle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Craftycle.xcdatamodel; sourceTree = "<group>"; };
 		2566A45C2083A41100775154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +64,21 @@
 		2566A4712083A41100775154 /* CraftycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraftycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566A4752083A41100775154 /* CraftycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftycleUITests.swift; sourceTree = "<group>"; };
 		2566A4772083A41100775154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2587873A2086C246009EADC9 /* BaseWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebService.swift; sourceTree = "<group>"; };
+		2587873C2086C3F2009EADC9 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		2587873E2086C5F6009EADC9 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		258787412086C63E009EADC9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		258787432086C6BA009EADC9 /* WebServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
+		258787452086C7AE009EADC9 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		258787472086CE70009EADC9 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		2587874A2086CF28009EADC9 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
+		25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedService.swift; sourceTree = "<group>"; };
+		25F47C0020868BFB00F6CB8D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		25F47C0120868BFB00F6CB8D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		25F47C0220868BFB00F6CB8D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		25F47C0320868BFB00F6CB8D /* WebServiceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceExtensions.swift; sourceTree = "<group>"; };
+		25F47C0420868BFB00F6CB8D /* ServiceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +129,13 @@
 		2566A4512083A41000775154 /* Craftycle */ = {
 			isa = PBXGroup;
 			children = (
+				258787492086CF18009EADC9 /* Extensions */,
+				258787402086C62D009EADC9 /* Models */,
+				25F47C0B20868C7A00F6CB8D /* Networking */,
 				2566A4522083A41000775154 /* AppDelegate.swift */,
-				2566A4542083A41000775154 /* ViewController.swift */,
+				2566A4542083A41000775154 /* MainTabBarController.swift */,
+				258787472086CE70009EADC9 /* CategoryViewController.swift */,
+				2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */,
 				2566A4562083A41000775154 /* Main.storyboard */,
 				2566A45C2083A41100775154 /* Assets.xcassets */,
 				2566A45E2083A41100775154 /* LaunchScreen.storyboard */,
@@ -126,6 +161,48 @@
 				2566A4772083A41100775154 /* Info.plist */,
 			);
 			path = CraftycleUITests;
+			sourceTree = "<group>";
+		};
+		258787402086C62D009EADC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				258787412086C63E009EADC9 /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		258787492086CF18009EADC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2587874A2086CF28009EADC9 /* Image.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25F47C0B20868C7A00F6CB8D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				25F47C0C20868C8500F6CB8D /* Core */,
+				2587873A2086C246009EADC9 /* BaseWebService.swift */,
+				2587873C2086C3F2009EADC9 /* BaseResponse.swift */,
+				258787452086C7AE009EADC9 /* BaseRequest.swift */,
+				2587873E2086C5F6009EADC9 /* CategoryService.swift */,
+				258787432086C6BA009EADC9 /* WebServiceError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		25F47C0C20868C8500F6CB8D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */,
+				25F47C0020868BFB00F6CB8D /* Request.swift */,
+				25F47C0120868BFB00F6CB8D /* Response.swift */,
+				25F47C0220868BFB00F6CB8D /* Service.swift */,
+				25F47C0420868BFB00F6CB8D /* ServiceConfiguration.swift */,
+				25F47C0320868BFB00F6CB8D /* WebServiceExtensions.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +336,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2566A4552083A41000775154 /* ViewController.swift in Sources */,
+				2566A4552083A41000775154 /* MainTabBarController.swift in Sources */,
+				2587874F2086CF99009EADC9 /* NewCategoryViewController.swift in Sources */,
+				25F47C0820868BFB00F6CB8D /* Service.swift in Sources */,
+				25F47C0520868BFB00F6CB8D /* AuthenticatedService.swift in Sources */,
+				2587873F2086C5F6009EADC9 /* CategoryService.swift in Sources */,
+				258787482086CE70009EADC9 /* CategoryViewController.swift in Sources */,
+				2587873B2086C246009EADC9 /* BaseWebService.swift in Sources */,
+				258787462086C7AE009EADC9 /* BaseRequest.swift in Sources */,
+				25F47C0620868BFB00F6CB8D /* Request.swift in Sources */,
+				25F47C0920868BFB00F6CB8D /* WebServiceExtensions.swift in Sources */,
+				25F47C0A20868BFB00F6CB8D /* ServiceConfiguration.swift in Sources */,
 				2566A4532083A41000775154 /* AppDelegate.swift in Sources */,
+				2587874C2086CF28009EADC9 /* Image.swift in Sources */,
+				258787422086C63E009EADC9 /* Category.swift in Sources */,
+				25F47C0720868BFB00F6CB8D /* Response.swift in Sources */,
+				2587873D2086C3F2009EADC9 /* BaseResponse.swift in Sources */,
 				2566A45B2083A41000775154 /* Craftycle.xcdatamodeld in Sources */,
+				258787442086C6BA009EADC9 /* WebServiceError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +526,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "http://localhost:8080/CategoryApp/webresources/";
 				CODE_SIGN_STYLE = Automatic;
+				HOST_NAME = "Debug Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,7 +546,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "http://localhost:8080/CategoryApp/webresources/";
 				CODE_SIGN_STYLE = Automatic;
+				HOST_NAME = "Release Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
