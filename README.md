@@ -18,9 +18,9 @@ Craftycle is a mobile app which motivates user to do the recycling in unconventi
   * Edit `$BASE_URL` in App's Build Settings, under User-Defined section, in both Debug and Release.  
   * [CocoaPods](https://cocoapods.org/).  
     Open Terminal from and type `sudo gem install cocoapods` to install [CocoaPods](https://cocoapods.org/).  
-    Note: In this project we are not going to heavily rely on open source libraries, the purpose is to get familar with CocoaPod(Dependency manager) and how to integrate Objective-C code in Swift project.  
-    To see how to initialize a CocoaPod project and how to integrate Objective-C code in Swift project, please check this [appendix](#appendix).  
-  * To run the project, open `Craftycle.xcworkspace` instead of `Craftycle.xcodeproj`. This git project does not ignore the Pod files so simply open `Craftycle.xcworkspace` and hit run.  
+    Note: In this project we are not going to heavily rely on open source libraries, the purpose is to get familar with CocoaPods(Dependency manager) and how to integrate Objective-C code in Swift project.  
+    To see how to initialize a CocoaPod project and how to integrate Objective-C code in Swift project, please check out this [appendix](#appendix).  
+  * To run the project, open `Craftycle.xcworkspace` instead of `Craftycle.xcodeproj`. This git project does not ignore the Pod files so simply open `Craftycle.xcworkspace` and hit run.  
     Note: In case you do not see `Craftycle.xcworkspace`, open Terminal on this project's directory, run `pod install`, then you should see `Craftycle.xcworkspace`.  
       
 ## <a name="architecture">Architecture  
