@@ -76,10 +76,10 @@ categoryService.getAllCategories(successBlock: {[weak self] allCategories in
   [DTCircularActivityIndicator](https://github.com/ducthinh2410/DTCircularActivityIndicator): Simple library to demonstrate the Objective-C integration into Swift project.  
   
 ## <a name="appendix"></a>Appendix  
-  [1. How to initialize CocoaPods project?](#initialize-cocoapods)  
+  [1. How to instantiate CocoaPods project?](#initialize-cocoapods)  
   [2. How to integate Objective-C code?](#integrate-objective-c)  
   
-  ### <a name="initialize-cocoapods"></a>How to initialize CocoaPods project?  
+  ### <a name="initialize-cocoapods"></a>How to instantiate CocoaPods project?  
    * Open terminal, change to project's root directory where `ProjectName.xcodeproj` resides.  
    * Type `pod init` and return.  
    * `Podfile` is created. Open `Podfile` and add dependencies to the `Podfile` under `# Pods for ProjectName`. Hit Save and return to terminal.  
