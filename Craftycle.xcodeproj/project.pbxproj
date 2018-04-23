@@ -30,6 +30,9 @@
 		25F47C0820868BFB00F6CB8D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0220868BFB00F6CB8D /* Service.swift */; };
 		25F47C0920868BFB00F6CB8D /* WebServiceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0320868BFB00F6CB8D /* WebServiceExtensions.swift */; };
 		25F47C0A20868BFB00F6CB8D /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0420868BFB00F6CB8D /* ServiceConfiguration.swift */; };
+		718076408DA6C329263A8256 /* Pods_CraftycleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891956E30E7AC27DF7458ED9 /* Pods_CraftycleUITests.framework */; };
+		97A62E1AE5B7401AEF47A159 /* Pods_CraftycleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75D0D81D0D7CD5902A7D797 /* Pods_CraftycleTests.framework */; };
+		FC0BD030056218670A46ABB6 /* Pods_Craftycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA4F5627F9879387524D90D /* Pods_Craftycle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071324D0B7949058C702E63F /* Pods-CraftycleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleUITests/Pods-CraftycleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2566A44F2083A41000775154 /* Craftycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Craftycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566A4522083A41000775154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2566A4542083A41000775154 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -73,12 +77,21 @@
 		258787472086CE70009EADC9 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		2587874A2086CF28009EADC9 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
+		2598C10E208D53F5009A8572 /* Craftycle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Craftycle-Bridging-Header.h"; sourceTree = "<group>"; };
 		25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedService.swift; sourceTree = "<group>"; };
 		25F47C0020868BFB00F6CB8D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		25F47C0120868BFB00F6CB8D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		25F47C0220868BFB00F6CB8D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		25F47C0320868BFB00F6CB8D /* WebServiceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceExtensions.swift; sourceTree = "<group>"; };
 		25F47C0420868BFB00F6CB8D /* ServiceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfiguration.swift; sourceTree = "<group>"; };
+		763D9641DFD7FEB59B2D0CE9 /* Pods-CraftycleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleTests/Pods-CraftycleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D4232FB524269A832351E51 /* Pods-Craftycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craftycle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Craftycle/Pods-Craftycle.debug.xcconfig"; sourceTree = "<group>"; };
+		891956E30E7AC27DF7458ED9 /* Pods_CraftycleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CraftycleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA4F5627F9879387524D90D /* Pods_Craftycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Craftycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75D0D81D0D7CD5902A7D797 /* Pods_CraftycleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CraftycleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB3882219A04B166C796E6C /* Pods-CraftycleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleTests/Pods-CraftycleTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE4C38D3F41BCFDE31850DDE /* Pods-Craftycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craftycle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Craftycle/Pods-Craftycle.release.xcconfig"; sourceTree = "<group>"; };
+		F3ED8800814B093C007BC58A /* Pods-CraftycleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleUITests/Pods-CraftycleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0BD030056218670A46ABB6 /* Pods_Craftycle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A62E1AE5B7401AEF47A159 /* Pods_CraftycleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +115,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718076408DA6C329263A8256 /* Pods_CraftycleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BDCE3B913A4DF54A24EDA25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D4232FB524269A832351E51 /* Pods-Craftycle.debug.xcconfig */,
+				DE4C38D3F41BCFDE31850DDE /* Pods-Craftycle.release.xcconfig */,
+				763D9641DFD7FEB59B2D0CE9 /* Pods-CraftycleTests.debug.xcconfig */,
+				BFB3882219A04B166C796E6C /* Pods-CraftycleTests.release.xcconfig */,
+				F3ED8800814B093C007BC58A /* Pods-CraftycleUITests.debug.xcconfig */,
+				071324D0B7949058C702E63F /* Pods-CraftycleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2566A4462083A41000775154 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +142,8 @@
 				2566A4692083A41100775154 /* CraftycleTests */,
 				2566A4742083A41100775154 /* CraftycleUITests */,
 				2566A4502083A41000775154 /* Products */,
+				1BDCE3B913A4DF54A24EDA25 /* Pods */,
+				64F820C82D2DA16B4FD9499C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +172,7 @@
 				2566A45E2083A41100775154 /* LaunchScreen.storyboard */,
 				2566A4612083A41100775154 /* Info.plist */,
 				2566A4592083A41000775154 /* Craftycle.xcdatamodeld */,
+				2598C10E208D53F5009A8572 /* Craftycle-Bridging-Header.h */,
 			);
 			path = Craftycle;
 			sourceTree = "<group>";
@@ -205,6 +237,16 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		64F820C82D2DA16B4FD9499C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA4F5627F9879387524D90D /* Pods_Craftycle.framework */,
+				B75D0D81D0D7CD5902A7D797 /* Pods_CraftycleTests.framework */,
+				891956E30E7AC27DF7458ED9 /* Pods_CraftycleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2566A47A2083A41100775154 /* Build configuration list for PBXNativeTarget "Craftycle" */;
 			buildPhases = (
+				914DDC4565127533453A1876 /* [CP] Check Pods Manifest.lock */,
 				2566A44B2083A41000775154 /* Sources */,
 				2566A44C2083A41000775154 /* Frameworks */,
 				2566A44D2083A41000775154 /* Resources */,
+				6AC4D9F0F134835362D9D38B /* [CP] Embed Pods Frameworks */,
+				DB65F4B6E1B1A37AEBC7870A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2566A47D2083A41100775154 /* Build configuration list for PBXNativeTarget "CraftycleTests" */;
 			buildPhases = (
+				F3EBA0FCA6E106821C4DD671 /* [CP] Check Pods Manifest.lock */,
 				2566A4622083A41100775154 /* Sources */,
 				2566A4632083A41100775154 /* Frameworks */,
 				2566A4642083A41100775154 /* Resources */,
+				E4203FDE47F12D93F1823098 /* [CP] Embed Pods Frameworks */,
+				97E700812B47A2D6C31C8CCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,9 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2566A4802083A41100775154 /* Build configuration list for PBXNativeTarget "CraftycleUITests" */;
 			buildPhases = (
+				D356C3DAB30EA79FBE2F7928 /* [CP] Check Pods Manifest.lock */,
 				2566A46D2083A41100775154 /* Sources */,
 				2566A46E2083A41100775154 /* Frameworks */,
 				2566A46F2083A41100775154 /* Resources */,
+				2A21D64262050056684C1E0B /* [CP] Embed Pods Frameworks */,
+				5466A715D8ABE0627E2ED6C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,6 +384,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A21D64262050056684C1E0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CraftycleUITests/Pods-CraftycleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5466A715D8ABE0627E2ED6C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CraftycleUITests/Pods-CraftycleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AC4D9F0F134835362D9D38B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Craftycle/Pods-Craftycle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DTCircularActivityIndicator/DTCircularActivityIndicator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCircularActivityIndicator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Craftycle/Pods-Craftycle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		914DDC4565127533453A1876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Craftycle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97E700812B47A2D6C31C8CCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CraftycleTests/Pods-CraftycleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D356C3DAB30EA79FBE2F7928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CraftycleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB65F4B6E1B1A37AEBC7870A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Craftycle/Pods-Craftycle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4203FDE47F12D93F1823098 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CraftycleTests/Pods-CraftycleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3EBA0FCA6E106821C4DD671 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CraftycleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2566A44B2083A41000775154 /* Sources */ = {
@@ -526,6 +727,7 @@
 		};
 		2566A47B2083A41100775154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4232FB524269A832351E51 /* Pods-Craftycle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://localhost:8080/CategoryApp/webresources/";
@@ -536,13 +738,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.craftycle.Craftycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Craftycle/Craftycle-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		2566A47C2083A41100775154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4C38D3F41BCFDE31850DDE /* Pods-Craftycle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://localhost:8080/CategoryApp/webresources/";
@@ -553,13 +758,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.craftycle.Craftycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Craftycle/Craftycle-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
 		2566A47E2083A41100775154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763D9641DFD7FEB59B2D0CE9 /* Pods-CraftycleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +784,7 @@
 		};
 		2566A47F2083A41100775154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB3882219A04B166C796E6C /* Pods-CraftycleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +801,7 @@
 		};
 		2566A4812083A41100775154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3ED8800814B093C007BC58A /* Pods-CraftycleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +817,7 @@
 		};
 		2566A4822083A41100775154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071324D0B7949058C702E63F /* Pods-CraftycleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

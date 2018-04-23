@@ -1,0 +1,12 @@
+PODS:
+  - DTCircularActivityIndicator (0.1.0)
+
+DEPENDENCIES:
+  - DTCircularActivityIndicator
+
+SPEC CHECKSUMS:
+  DTCircularActivityIndicator: f7bc3bde9921df6883cc81933a3545197862293b
+
+PODFILE CHECKSUM: 048eec35fb68fcb3a870d50d88593160c42c3a83
+
+COCOAPODS: 1.4.0
