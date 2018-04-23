@@ -91,6 +91,6 @@ categoryService.getAllCategories(successBlock: {[weak self] allCategories in
    * Under ProjectName folder, create a Header file.  
    * Open `Build Settings` of the desired target.  
    * In `Swift Compiler - General` section. Navigate to `Objective-C Bridging Header` and set the value to `ProjectName/Bridging-Header-Filename.h`.  
-   * Open the newly created header file and import the desired Objective-C frameworks.  
-   * Note: To integate with CocoaPods Objective-C libraries/frameworks, search for `User Header Search Paths` and set its value to `Pods/**`. Then import the necessaries in the bridging header file.  
+   * Search for `User Header Search Paths` and set its value to `Pods/**`.  
+   * Open the newly created header file and import the desired Objective-C libraries/frameworks.  
     
