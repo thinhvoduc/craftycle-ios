@@ -16,7 +16,7 @@ Craftycle is a mobile app which motivates user to do the recycling in unconventi
   * [Backend](https://github.com/thinhvoduc/craftycle-backend).  
     NOTE: You need setup your own server before running the iOS app.  
   * Edit `$BASE_URL` in App's Build Settings, under User-Defined section, in both Debug and Release.  
-    NOTE: Hit `Command + Option + Shift + K` to clean the build, otherwise it won't make any changes.  
+    NOTE: Hit `Command + Option + Shift + K` to clean the build folder, otherwise it won't make any changes.  
   * [CocoaPods](https://cocoapods.org/).  
     Open Terminal from and type `sudo gem install cocoapods` to install [CocoaPods](https://cocoapods.org/).  
     Note: In this project we are not going to heavily rely on open source libraries, the purpose is to get familar with CocoaPods(Dependency manager) and how to integrate Objective-C code in Swift project.  
