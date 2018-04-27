@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253C5FC520929E2200CF868B /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C5FC420929E2200CF868B /* CGFloat.swift */; };
+		253C5FC720929E4900CF868B /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C5FC620929E4900CF868B /* CGSize.swift */; };
+		253C5FCA20929FAA00CF868B /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C5FC920929FAA00CF868B /* LoadingManager.swift */; };
+		253C5FCC2092AB7E00CF868B /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C5FCB2092AB7E00CF868B /* UIWindow.swift */; };
+		2561858020930C7400EC788B /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561857F20930C7400EC788B /* ItemService.swift */; };
+		2561858220930D2200EC788B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561858120930D2200EC788B /* Item.swift */; };
+		25618586209318E800EC788B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25618585209318E800EC788B /* HomeViewController.swift */; };
+		256185892093192C00EC788B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256185882093192C00EC788B /* HomeCollectionViewCell.swift */; };
 		2566A4532083A41000775154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4522083A41000775154 /* AppDelegate.swift */; };
 		2566A4552083A41000775154 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4542083A41000775154 /* MainTabBarController.swift */; };
 		2566A4582083A41000775154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2566A4562083A41000775154 /* Main.storyboard */; };
@@ -54,6 +62,14 @@
 
 /* Begin PBXFileReference section */
 		071324D0B7949058C702E63F /* Pods-CraftycleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleUITests/Pods-CraftycleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		253C5FC420929E2200CF868B /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		253C5FC620929E4900CF868B /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		253C5FC920929FAA00CF868B /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		253C5FCB2092AB7E00CF868B /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		2561857F20930C7400EC788B /* ItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
+		2561858120930D2200EC788B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		25618585209318E800EC788B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		256185882093192C00EC788B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		2566A44F2083A41000775154 /* Craftycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Craftycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566A4522083A41000775154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2566A4542083A41000775154 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -135,6 +151,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		253C5FC820929F5800CF868B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				253C5FC920929FAA00CF868B /* LoadingManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		256185832093189C00EC788B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25618584209318AA00EC788B /* Home */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		25618584209318AA00EC788B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				25618587209318F500EC788B /* Views */,
+				25618585209318E800EC788B /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		25618587209318F500EC788B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				256185882093192C00EC788B /* HomeCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2566A4462083A41000775154 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +209,8 @@
 		2566A4512083A41000775154 /* Craftycle */ = {
 			isa = PBXGroup;
 			children = (
+				256185832093189C00EC788B /* View Controllers */,
+				253C5FC820929F5800CF868B /* Managers */,
 				258787492086CF18009EADC9 /* Extensions */,
 				258787402086C62D009EADC9 /* Models */,
 				25F47C0B20868C7A00F6CB8D /* Networking */,
@@ -199,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				258787412086C63E009EADC9 /* Category.swift */,
+				2561858120930D2200EC788B /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				2587874A2086CF28009EADC9 /* Image.swift */,
+				253C5FC420929E2200CF868B /* CGFloat.swift */,
+				253C5FC620929E4900CF868B /* CGSize.swift */,
+				253C5FCB2092AB7E00CF868B /* UIWindow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,6 +275,7 @@
 				258787452086C7AE009EADC9 /* BaseRequest.swift */,
 				2587873E2086C5F6009EADC9 /* CategoryService.swift */,
 				258787432086C6BA009EADC9 /* WebServiceError.swift */,
+				2561857F20930C7400EC788B /* ItemService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -540,9 +596,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25618586209318E800EC788B /* HomeViewController.swift in Sources */,
 				2566A4552083A41000775154 /* MainTabBarController.swift in Sources */,
 				2587874F2086CF99009EADC9 /* NewCategoryViewController.swift in Sources */,
+				253C5FCA20929FAA00CF868B /* LoadingManager.swift in Sources */,
 				25F47C0820868BFB00F6CB8D /* Service.swift in Sources */,
+				256185892093192C00EC788B /* HomeCollectionViewCell.swift in Sources */,
+				2561858220930D2200EC788B /* Item.swift in Sources */,
 				25F47C0520868BFB00F6CB8D /* AuthenticatedService.swift in Sources */,
 				2587873F2086C5F6009EADC9 /* CategoryService.swift in Sources */,
 				258787482086CE70009EADC9 /* CategoryViewController.swift in Sources */,
@@ -550,10 +610,14 @@
 				258787462086C7AE009EADC9 /* BaseRequest.swift in Sources */,
 				25F47C0620868BFB00F6CB8D /* Request.swift in Sources */,
 				25F47C0920868BFB00F6CB8D /* WebServiceExtensions.swift in Sources */,
+				2561858020930C7400EC788B /* ItemService.swift in Sources */,
 				25F47C0A20868BFB00F6CB8D /* ServiceConfiguration.swift in Sources */,
 				2566A4532083A41000775154 /* AppDelegate.swift in Sources */,
+				253C5FC720929E4900CF868B /* CGSize.swift in Sources */,
 				2587874C2086CF28009EADC9 /* Image.swift in Sources */,
+				253C5FCC2092AB7E00CF868B /* UIWindow.swift in Sources */,
 				258787422086C63E009EADC9 /* Category.swift in Sources */,
+				253C5FC520929E2200CF868B /* CGFloat.swift in Sources */,
 				25F47C0720868BFB00F6CB8D /* Response.swift in Sources */,
 				2587873D2086C3F2009EADC9 /* BaseResponse.swift in Sources */,
 				2566A45B2083A41000775154 /* Craftycle.xcdatamodeld in Sources */,
@@ -730,7 +794,7 @@
 			baseConfigurationReference = 7D4232FB524269A832351E51 /* Pods-Craftycle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BASE_URL = "http://localhost:8080/CategoryApp/webresources/";
+				BASE_URL = "http://localhost:8080/craftycle-backend/webresources/";
 				CODE_SIGN_STYLE = Automatic;
 				HOST_NAME = "Debug Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
@@ -750,7 +814,7 @@
 			baseConfigurationReference = DE4C38D3F41BCFDE31850DDE /* Pods-Craftycle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BASE_URL = "http://localhost:8080/CategoryApp/webresources/";
+				BASE_URL = "http://localhost:8080/craftycle-backend/webresources/";
 				CODE_SIGN_STYLE = Automatic;
 				HOST_NAME = "Release Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
