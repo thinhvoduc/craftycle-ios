@@ -13,6 +13,7 @@ class CategoryViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var uploadBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var craftSwitch: UISwitch!
     
     /// Category source
     fileprivate var categories: [Category] = []
@@ -76,7 +77,7 @@ class CategoryViewController: UIViewController {
         
         guard let image = imageView.image else { return }
         LoadingManager.sharedManager.showLoading(message: "Uploading...")
-        itemsService.createItem(image, categoryId: 4, isCrafted: true, successBlock: {[weak self] item in
+        itemsService.createItem(image, categoryId: 4, isCrafted: craftSwitch.isOn, successBlock: {[weak self] item in
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(3)) {
                 LoadingManager.sharedManager.showSuccess(message: "Successed", dismissAfter: DispatchTimeInterval.seconds(1))
                 print(item?.category)

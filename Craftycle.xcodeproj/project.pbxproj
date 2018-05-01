@@ -23,6 +23,8 @@
 		2566A4602083A41100775154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2566A45E2083A41100775154 /* LaunchScreen.storyboard */; };
 		2566A46B2083A41100775154 /* CraftycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A46A2083A41100775154 /* CraftycleTests.swift */; };
 		2566A4762083A41100775154 /* CraftycleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566A4752083A41100775154 /* CraftycleUITests.swift */; };
+		2584854B2098D0AC008B8EE6 /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 2584854A2098D0AC008B8EE6 /* Items.json */; };
+		2584854F2098D875008B8EE6 /* Items.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2584854E2098D875008B8EE6 /* Items.xcassets */; };
 		2587873B2086C246009EADC9 /* BaseWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587873A2086C246009EADC9 /* BaseWebService.swift */; };
 		2587873D2086C3F2009EADC9 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587873C2086C3F2009EADC9 /* BaseResponse.swift */; };
 		2587873F2086C5F6009EADC9 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587873E2086C5F6009EADC9 /* CategoryService.swift */; };
@@ -84,6 +86,8 @@
 		2566A4712083A41100775154 /* CraftycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraftycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566A4752083A41100775154 /* CraftycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftycleUITests.swift; sourceTree = "<group>"; };
 		2566A4772083A41100775154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2584854A2098D0AC008B8EE6 /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
+		2584854E2098D875008B8EE6 /* Items.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Items.xcassets; path = Craftycle/Items.xcassets; sourceTree = SOURCE_ROOT; };
 		2587873A2086C246009EADC9 /* BaseWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebService.swift; sourceTree = "<group>"; };
 		2587873C2086C3F2009EADC9 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		2587873E2086C5F6009EADC9 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				2566A4512083A41000775154 /* Craftycle */,
+				258485492098D089008B8EE6 /* Data */,
 				2566A4692083A41100775154 /* CraftycleTests */,
 				2566A4742083A41100775154 /* CraftycleUITests */,
 				2566A4502083A41000775154 /* Products */,
@@ -220,6 +225,7 @@
 				2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */,
 				2566A4562083A41000775154 /* Main.storyboard */,
 				2566A45C2083A41100775154 /* Assets.xcassets */,
+				2584854E2098D875008B8EE6 /* Items.xcassets */,
 				2566A45E2083A41100775154 /* LaunchScreen.storyboard */,
 				2566A4612083A41100775154 /* Info.plist */,
 				2566A4592083A41000775154 /* Craftycle.xcdatamodeld */,
@@ -244,6 +250,14 @@
 				2566A4772083A41100775154 /* Info.plist */,
 			);
 			path = CraftycleUITests;
+			sourceTree = "<group>";
+		};
+		258485492098D089008B8EE6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2584854A2098D0AC008B8EE6 /* Items.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		258787402086C62D009EADC9 /* Models */ = {
@@ -419,7 +433,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2584854B2098D0AC008B8EE6 /* Items.json in Resources */,
 				2566A4602083A41100775154 /* LaunchScreen.storyboard in Resources */,
+				2584854F2098D875008B8EE6 /* Items.xcassets in Resources */,
 				2566A45D2083A41100775154 /* Assets.xcassets in Resources */,
 				2566A4582083A41000775154 /* Main.storyboard in Resources */,
 			);

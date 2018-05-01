@@ -13,4 +13,17 @@ struct Item: Codable {
     var imageUrl: String?
     var crafted: Bool
     var category: Category
+    var imageName: String?
+    
+    static func samples() -> [Item]? {
+        guard let url = Bundle.main.url(forResource: "Items", withExtension: "json"), let itemsData = try? Data(contentsOf: url) else {
+            return nil
+        }
+        
+        var items: [Item]?
+        
+        items = try? JSONDecoder().decode([Item].self, from: itemsData)
+    
+        return items
+    }
 }

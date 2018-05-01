@@ -50,7 +50,6 @@
         <!--Home View Controller-->
         <scene sceneID="844-jx-opQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L0U-d7-Hu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="zbc-xS-q3S" customClass="HomeViewController" customModule="Craftycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipv-md-e8k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -115,6 +114,7 @@
                         <outlet property="collectionView" destination="Uux-ur-l75" id="YZe-ej-WaX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0U-d7-Hu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2013.5999999999999" y="-600.44977511244383"/>
         </scene>
@@ -268,25 +268,33 @@
                                     <constraint firstAttribute="width" secondItem="YTM-Qy-ZJN" secondAttribute="height" multiplier="1:1" id="6Oo-bt-9TL"/>
                                 </constraints>
                             </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zSq-bp-Qkv">
+                                <rect key="frame" x="310" y="318" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crafted:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3y-Bd-sGW">
+                                <rect key="frame" x="16" y="323" width="95" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YTM-Qy-ZJN" firstAttribute="top" secondItem="4Yg-Tb-KRc" secondAttribute="top" constant="20" id="0LT-OY-KzW"/>
+                            <constraint firstItem="4Yg-Tb-KRc" firstAttribute="trailing" secondItem="zSq-bp-Qkv" secondAttribute="trailing" constant="16" id="2vE-L1-see"/>
                             <constraint firstItem="QsK-iZ-A4X" firstAttribute="trailing" secondItem="4Yg-Tb-KRc" secondAttribute="trailing" id="GYe-Rm-4XI"/>
+                            <constraint firstItem="zSq-bp-Qkv" firstAttribute="centerY" secondItem="ouY-Ya-ewM" secondAttribute="centerY" id="Ikw-LV-bH1"/>
                             <constraint firstItem="QsK-iZ-A4X" firstAttribute="top" secondItem="YTM-Qy-ZJN" secondAttribute="bottom" constant="20" id="NS6-6m-8NT"/>
                             <constraint firstItem="QsK-iZ-A4X" firstAttribute="leading" secondItem="4Yg-Tb-KRc" secondAttribute="leading" id="XNu-Xo-JPA"/>
+                            <constraint firstItem="C3y-Bd-sGW" firstAttribute="baseline" secondItem="zSq-bp-Qkv" secondAttribute="baseline" id="Ydh-ks-ahX"/>
                             <constraint firstItem="QsK-iZ-A4X" firstAttribute="height" secondItem="ouY-Ya-ewM" secondAttribute="height" multiplier="0.5" id="c7v-tF-H2h"/>
                             <constraint firstItem="YTM-Qy-ZJN" firstAttribute="centerX" secondItem="ouY-Ya-ewM" secondAttribute="centerX" id="jwg-VV-Usi"/>
+                            <constraint firstItem="C3y-Bd-sGW" firstAttribute="leading" secondItem="4Yg-Tb-KRc" secondAttribute="leading" constant="16" id="n97-Fn-ioa"/>
                             <constraint firstItem="QsK-iZ-A4X" firstAttribute="bottom" secondItem="4Yg-Tb-KRc" secondAttribute="bottom" id="vRj-kB-flG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Yg-Tb-KRc"/>
                     </view>
                     <navigationItem key="navigationItem" id="yCl-PO-QJV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Vzp-es-SAa">
-                            <connections>
-                                <action selector="refreshButtonTapped:" destination="lBt-Cb-pt1" id="fzo-2Y-maN"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Upload" id="OIh-4u-XNX">
                             <connections>
                                 <action selector="uploadButtonTapped:" destination="lBt-Cb-pt1" id="wjl-Oi-6qO"/>
@@ -294,6 +302,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="craftSwitch" destination="zSq-bp-Qkv" id="H9T-Ba-giq"/>
                         <outlet property="imageView" destination="YTM-Qy-ZJN" id="d9L-E6-x8s"/>
                         <outlet property="pickerView" destination="QsK-iZ-A4X" id="vIR-sg-Bjt"/>
                         <outlet property="uploadBarButtonItem" destination="OIh-4u-XNX" id="QWo-z4-Cq4"/>

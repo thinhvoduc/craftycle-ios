@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     
 //    fileprivate lazy var refreshControl:
     
-    var items: [Item] = []
+    var items: [Item] = Item.samples() ?? []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         navigationItem.title = "Home"
         
         itemsService.getAllItems(successBlock: {[weak self] (items) in
-            self?.items = items
+            self?.items.append(contentsOf: items)
             self?.collectionView.reloadData()
         }, failureBlock: nil)
     }
