@@ -13,19 +13,42 @@ class HomeViewController: UIViewController {
     
     private lazy var itemsService = ItemService(ServiceConfiguration.defaultAppConfiguration()!)
     
-//    fileprivate lazy var refreshControl:
-    
     var items: [Item] = Item.samples() ?? []
     
+    fileprivate let refreshControl: UIRefreshControl = {
+        let control = UIRefreshControl()
+        control.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        return control
+    }()
+
+    // MARK: Life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView.addSubview(refreshControl)
+        
         collectionView.dataSource = self
         navigationItem.title = "Home"
+        
         
         itemsService.getAllItems(successBlock: {[weak self] (items) in
             self?.items.append(contentsOf: items)
             self?.collectionView.reloadData()
-        }, failureBlock: nil)
+            }, failureBlock: nil)
+    }
+    
+    // MARK: Actions
+    @objc func refresh(_ sender: Any) {
+        // Do refresh content
+        itemsService.getAllItems(successBlock: {[weak self] (items) in
+            self?.items.append(contentsOf: items)
+            self?.collectionView.reloadData()
+            self?.refreshControl.endRefreshing()
+            }, failureBlock: {[weak self] _ in
+                
+                self?.refreshControl.endRefreshing()
+        })
+        
     }
 }
 

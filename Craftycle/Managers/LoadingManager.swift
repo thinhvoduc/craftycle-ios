@@ -178,7 +178,13 @@ final class LoadingManager: NSObject {
     }
     
     fileprivate func dismiss() {
-        dimmingBackgroundView.removeFromSuperview()
-        isLoading = false
+        UIView.animate(withDuration: 0.2, animations: {
+            self.dimmingBackgroundView.alpha = 0
+        }) { _ in
+            self.dimmingBackgroundView.removeFromSuperview()
+            self.isLoading = false
+            self.dimmingBackgroundView.alpha = 1.0
+        }
+       
     }
 }
