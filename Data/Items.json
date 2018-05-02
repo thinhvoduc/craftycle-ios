@@ -1,0 +1,75 @@
+
+[
+ {
+ "category": {
+             "id": 0,
+             "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/vehicle.png",
+             "name": "Old device"
+             },
+ "crafted": false,
+ "id": 100,
+ "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/50b9e85d-e754-4151-aa8a-bfee58c0fdad.jpg",
+ "imageName": "old-device"
+ },
+ 
+ {
+ "category": {
+             "id": 1,
+             "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/vehicle.png",
+             "name": "Wood"
+             },
+ "crafted": false,
+ "id": 101,
+ "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/50b9e85d-e754-4151-aa8a-bfee58c0fdad.jpg",
+ "imageName": "wood"
+ },
+ 
+ {
+ "category": {
+             "id": 2,
+             "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/vehicle.png",
+             "name": "Paper"
+             },
+ "crafted": false,
+ "id": 102,
+ "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/50b9e85d-e754-4151-aa8a-bfee58c0fdad.jpg",
+ "imageName": "paper"
+ },
+ 
+ {
+ "category": {
+             "id": 3,
+             "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/vehicle.png",
+             "name": "Metal"
+             },
+ "crafted": false,
+ "id": 103,
+ "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/50b9e85d-e754-4151-aa8a-bfee58c0fdad.jpg",
+ "imageName": "metal"
+ },
+ 
+ {
+ "category": {
+             "id": 4,
+             "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/vehicle.png",
+             "name": "Fabric"
+             },
+ "crafted": false,
+ "id": 104,
+ "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/50b9e85d-e754-4151-aa8a-bfee58c0fdad.jpg",
+ "imageName": "Fabric"
+ },
+ 
+ {
+ "category": {
+             "id": 5,
+             "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/vehicle.png",
+             "name": "Decoration"
+             },
+ "crafted": false,
+ "id": 105,
+ "imageUrl": "http://localhost:8080/craftycle-backend/webresources/images/50b9e85d-e754-4151-aa8a-bfee58c0fdad.jpg",
+ "imageName": "decoration"
+ }
+ 
+ ]
