@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreML
+import Vision
 
 class CategoryViewController: UIViewController {
     
@@ -14,6 +16,69 @@ class CategoryViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var uploadBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var craftSwitch: UISwitch!
+    @IBOutlet weak var classificationLabel: UILabel!
+    
+    
+    //ML request
+    lazy var classificationRequest: VNCoreMLRequest = {
+        do {
+            let model = try VNCoreMLModel(for: craftycle().model)
+            
+            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+                self?.processClassifications(for: request, error: error)
+            })
+            request.imageCropAndScaleOption = .centerCrop
+            return request
+        } catch {
+            fatalError("Failed to load Vision ML model: \(error)")
+        }
+    }()
+    func updateClassifications(for image: UIImage) {
+        classificationLabel.text = "Classifying..."
+        
+        let orientation = CGImagePropertyOrientation(rawValue: UInt32(image.imageOrientation.rawValue))
+        guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) from \(image).") }
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            let handler = VNImageRequestHandler(ciImage: ciImage, orientation: orientation!)
+            do {
+                try handler.perform([self.classificationRequest])
+            } catch {
+                /*
+                 This handler catches general image processing errors. The `classificationRequest`'s
+                 completion handler `processClassifications(_:error:)` catches errors specific
+                 to processing that request.
+                 */
+                print("Failed to perform classification.\n\(error.localizedDescription)")
+            }
+        }
+    }
+    func processClassifications(for request: VNRequest, error: Error?) {
+        DispatchQueue.main.async {
+            guard let results = request.results else {
+                self.classificationLabel.text = "Unable to classify image.\n\(error!.localizedDescription)"
+                return
+            }
+            // The `results` will always be `VNClassificationObservation`s, as specified by the Core ML model in this project.
+            let classifications = results as! [VNClassificationObservation]
+            
+            if classifications.isEmpty {
+                self.classificationLabel.text = "Nothing recognized."
+            } else {
+                // Display top classifications ranked by confidence in the UI.
+                let topClassifications = classifications.prefix(2)
+                let descriptions = topClassifications.map { classification in
+                    // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
+                    return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
+                }
+                self.classificationLabel.text = "Classification:\n" + descriptions.joined(separator: "\n")
+                
+            }
+        }
+    }
+        
+    
+    
     
     /// Category source
     fileprivate var categories: [Category] = []
@@ -95,8 +160,8 @@ class CategoryViewController: UIViewController {
                 // Disable upload button
                 self?.uploadBarButtonItem.isEnabled = false
             }
-        
-    }
+    
+        }
     fileprivate func setupImageView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_ :)))
         imageView.addGestureRecognizer(tapGestureRecognizer)
@@ -109,6 +174,8 @@ extension CategoryViewController: UIImagePickerControllerDelegate, UINavigationC
         guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
+        imageView.image = selectedImage
+        updateClassifications(for: selectedImage)
         
         imageView.image = selectedImage
         uploadBarButtonItem.isEnabled = true
