@@ -8,6 +8,8 @@
 
 import UIKit
 
+fileprivate let kMachineLearningResultViewControllerId = "MachineLearningResultViewController"
+
 class CategoryViewController: UIViewController {
     
     @IBOutlet weak var pickerView: UIPickerView!
@@ -57,14 +59,6 @@ class CategoryViewController: UIViewController {
         }
     }
     
-    @IBAction func refreshButtonTapped(_ sender: Any) {
-        LoadingManager.sharedManager.showLoading(message: "Loading...")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(3)) {
-            
-            LoadingManager.sharedManager.showError(message: "Failed To upload", dismissAfter: DispatchTimeInterval.seconds(3))
-        }
-    }
-    
     // MARK: - Actions
     @objc func imageViewTapped(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
@@ -74,24 +68,26 @@ class CategoryViewController: UIViewController {
     }
     
     @IBAction func uploadButtonTapped(_ sender: Any) {
-        
+
         guard let image = imageView.image else { return }
         LoadingManager.sharedManager.showLoading(message: "Uploading...")
         itemsService.createItem(image, categoryId: 4, isCrafted: craftSwitch.isOn, successBlock: {[weak self] item in
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(3)) {
-                LoadingManager.sharedManager.showSuccess(message: "Successed", dismissAfter: DispatchTimeInterval.seconds(1))
-                print(item?.category)
+                LoadingManager.sharedManager.showSuccess(message: "Successed", dismissAfter: DispatchTimeInterval.seconds(1), completionHandler: {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let categoryResultViewController = storyboard.instantiateViewController(withIdentifier: kMachineLearningResultViewControllerId)
+                    self?.present(categoryResultViewController, animated: true, completion: nil)
+                })
             }
-            
+
             // Disable upload button
             self?.uploadBarButtonItem.isEnabled = false
             }) {[weak self] error in
-                
+
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(3)) {
                     LoadingManager.sharedManager.showError(message: "Failed To Upload", dismissAfter: DispatchTimeInterval.seconds(1))
-                    print(error)
                 }
-                
+
                 // Disable upload button
                 self?.uploadBarButtonItem.isEnabled = false
             }

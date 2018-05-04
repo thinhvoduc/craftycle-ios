@@ -119,13 +119,14 @@ final class LoadingManager: NSObject {
         }
     }
     
-    func showSuccess(message: String, dismissAfter interval: DispatchTimeInterval = .never) {
+    func showSuccess(message: String, dismissAfter interval: DispatchTimeInterval = .never, completionHandler: (()->Void)? = nil) {
         showImageView(true, image: UIImage(named: "success-icon"))
         activityIndicator.stopAnimating()
         label.text = message
         
         DispatchQueue.main.asyncAfter(deadline: .now() + interval) {[weak self] in
             self?.dismiss()
+            completionHandler?()
         }
     }
     

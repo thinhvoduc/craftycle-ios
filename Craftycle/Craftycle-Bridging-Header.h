@@ -10,5 +10,7 @@
 #define Craftycle_Bridging_Header_h
 
 #import "DTCircularActivityIndicator/DTCircularActivityIndicator.h"
+#import "DropDownTransitionAnimator.h"
+#import "BackgroundPresentationController.h"
 
 #endif /* Craftycle_Bridging_Header_h */
