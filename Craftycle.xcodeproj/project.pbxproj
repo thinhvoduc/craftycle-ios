@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25085DCA209C04FE007A57F8 /* BackgroundPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25085DC9209C04FE007A57F8 /* BackgroundPresentationController.m */; };
+		25085DCD209C0513007A57F8 /* DropDownTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 25085DCC209C0513007A57F8 /* DropDownTransitionAnimator.m */; };
+		25085DD0209C05D8007A57F8 /* MachineLearningResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25085DCF209C05D8007A57F8 /* MachineLearningResultViewController.swift */; };
 		253C5FC520929E2200CF868B /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C5FC420929E2200CF868B /* CGFloat.swift */; };
 		253C5FC720929E4900CF868B /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C5FC620929E4900CF868B /* CGSize.swift */; };
 		253C5FCA20929FAA00CF868B /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C5FC920929FAA00CF868B /* LoadingManager.swift */; };
@@ -64,6 +67,11 @@
 
 /* Begin PBXFileReference section */
 		071324D0B7949058C702E63F /* Pods-CraftycleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleUITests/Pods-CraftycleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		25085DC8209C04FE007A57F8 /* BackgroundPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundPresentationController.h; sourceTree = "<group>"; };
+		25085DC9209C04FE007A57F8 /* BackgroundPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundPresentationController.m; sourceTree = "<group>"; };
+		25085DCB209C0513007A57F8 /* DropDownTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownTransitionAnimator.h; sourceTree = "<group>"; };
+		25085DCC209C0513007A57F8 /* DropDownTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownTransitionAnimator.m; sourceTree = "<group>"; };
+		25085DCF209C05D8007A57F8 /* MachineLearningResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineLearningResultViewController.swift; sourceTree = "<group>"; };
 		253C5FC420929E2200CF868B /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		253C5FC620929E4900CF868B /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		253C5FC920929FAA00CF868B /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
@@ -155,6 +163,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		25085DBF209C00CB007A57F8 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				25085DCB209C0513007A57F8 /* DropDownTransitionAnimator.h */,
+				25085DCC209C0513007A57F8 /* DropDownTransitionAnimator.m */,
+				25085DC8209C04FE007A57F8 /* BackgroundPresentationController.h */,
+				25085DC9209C04FE007A57F8 /* BackgroundPresentationController.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		25085DCE209C05B8007A57F8 /* MachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+				25085DCF209C05D8007A57F8 /* MachineLearningResultViewController.swift */,
+			);
+			path = MachineLearning;
+			sourceTree = "<group>";
+		};
 		253C5FC820929F5800CF868B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +193,7 @@
 		256185832093189C00EC788B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25085DCE209C05B8007A57F8 /* MachineLearning */,
 				25618584209318AA00EC788B /* Home */,
 			);
 			path = "View Controllers";
@@ -214,6 +242,7 @@
 		2566A4512083A41000775154 /* Craftycle */ = {
 			isa = PBXGroup;
 			children = (
+				25085DBF209C00CB007A57F8 /* Others */,
 				256185832093189C00EC788B /* View Controllers */,
 				253C5FC820929F5800CF868B /* Managers */,
 				258787492086CF18009EADC9 /* Extensions */,
@@ -624,14 +653,17 @@
 				258787482086CE70009EADC9 /* CategoryViewController.swift in Sources */,
 				2587873B2086C246009EADC9 /* BaseWebService.swift in Sources */,
 				258787462086C7AE009EADC9 /* BaseRequest.swift in Sources */,
+				25085DD0209C05D8007A57F8 /* MachineLearningResultViewController.swift in Sources */,
 				25F47C0620868BFB00F6CB8D /* Request.swift in Sources */,
 				25F47C0920868BFB00F6CB8D /* WebServiceExtensions.swift in Sources */,
+				25085DCD209C0513007A57F8 /* DropDownTransitionAnimator.m in Sources */,
 				2561858020930C7400EC788B /* ItemService.swift in Sources */,
 				25F47C0A20868BFB00F6CB8D /* ServiceConfiguration.swift in Sources */,
 				2566A4532083A41000775154 /* AppDelegate.swift in Sources */,
 				253C5FC720929E4900CF868B /* CGSize.swift in Sources */,
 				2587874C2086CF28009EADC9 /* Image.swift in Sources */,
 				253C5FCC2092AB7E00CF868B /* UIWindow.swift in Sources */,
+				25085DCA209C04FE007A57F8 /* BackgroundPresentationController.m in Sources */,
 				258787422086C63E009EADC9 /* Category.swift in Sources */,
 				253C5FC520929E2200CF868B /* CGFloat.swift in Sources */,
 				25F47C0720868BFB00F6CB8D /* Response.swift in Sources */,

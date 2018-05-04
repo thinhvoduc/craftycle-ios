@@ -19,7 +19,7 @@
                     <view key="view" contentMode="scaleToFill" id="JLJ-JZ-iDg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.71372549019607845" green="1" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="G3L-6B-QCA"/>
                     </view>
                     <navigationItem key="navigationItem" id="flG-s6-YIe"/>
@@ -27,6 +27,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQO-2y-HHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1996" y="176"/>
+        </scene>
+        <!--Machine Learning Result View Controller-->
+        <scene sceneID="CKE-u4-mzO">
+            <objects>
+                <viewController storyboardIdentifier="MachineLearningResultViewController" id="9GJ-OC-kku" customClass="MachineLearningResultViewController" customModule="Craftycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wAQ-45-qb0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ek4-03-kQY">
+                                <rect key="frame" x="110" y="100" width="155.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eju-j4-CJd">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips: How to recycle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BN4-KB-wiT">
+                                        <rect key="frame" x="0.0" y="29.5" width="155.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceh-qI-M5o">
+                                <rect key="frame" x="60" y="485" width="255" height="42"/>
+                                <color key="backgroundColor" red="0.24313725490196078" green="0.28235294117647058" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="75g-hs-Uam"/>
+                                </constraints>
+                                <state key="normal" title="Nearest Recycling Point">
+                                    <color key="titleColor" red="0.99431943508351384" green="1" blue="0.97851617112556688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ts-2t-Kn6">
+                                <rect key="frame" x="30" y="190" width="315" height="81.5"/>
+                                <string key="text">1. Take it to blacksmith's shop
+2. Go to recycling center
+3. Make outdoor art </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gtP-aL-hJe" firstAttribute="trailing" secondItem="2Ts-2t-Kn6" secondAttribute="trailing" constant="30" id="39h-yP-Xi2"/>
+                            <constraint firstItem="Ceh-qI-M5o" firstAttribute="leading" secondItem="gtP-aL-hJe" secondAttribute="leading" constant="60" id="82p-Om-cGH"/>
+                            <constraint firstItem="gtP-aL-hJe" firstAttribute="bottom" secondItem="Ceh-qI-M5o" secondAttribute="bottom" constant="140" id="JKB-nF-Ast"/>
+                            <constraint firstItem="gtP-aL-hJe" firstAttribute="trailing" secondItem="Ceh-qI-M5o" secondAttribute="trailing" constant="60" id="PdI-jc-gHY"/>
+                            <constraint firstItem="Ek4-03-kQY" firstAttribute="top" secondItem="gtP-aL-hJe" secondAttribute="top" constant="80" id="YoR-yZ-eb6"/>
+                            <constraint firstItem="2Ts-2t-Kn6" firstAttribute="leading" secondItem="gtP-aL-hJe" secondAttribute="leading" constant="30" id="aNa-gl-Cix"/>
+                            <constraint firstItem="2Ts-2t-Kn6" firstAttribute="top" secondItem="Ek4-03-kQY" secondAttribute="bottom" constant="40" id="hFq-9Z-zNU"/>
+                            <constraint firstItem="2Ts-2t-Kn6" firstAttribute="centerX" secondItem="wAQ-45-qb0" secondAttribute="centerX" id="hM6-vh-pVa"/>
+                            <constraint firstItem="Ceh-qI-M5o" firstAttribute="centerX" secondItem="wAQ-45-qb0" secondAttribute="centerX" id="jML-uS-EWr"/>
+                            <constraint firstItem="Ek4-03-kQY" firstAttribute="centerX" secondItem="wAQ-45-qb0" secondAttribute="centerX" id="oDy-aX-nuZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gtP-aL-hJe"/>
+                    </view>
+                    <connections>
+                        <outlet property="showRecyclingPointButton" destination="Ceh-qI-M5o" id="SaX-a1-qzL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XI3-rA-ejH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2834.4000000000001" y="938.68065967016503"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EWT-FA-iR2">
@@ -57,12 +125,12 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uux-ur-l75">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.71372549019607845" green="1" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lT6-mi-bYY">
                                     <size key="itemSize" width="241" height="240"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="cYX-H4-ivr" customClass="HomeCollectionViewCell" customModule="Craftycle" customModuleProvider="target">
@@ -126,6 +194,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.33021919767728725" green="1" blue="0.4141344472847196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tinColor">
+                                <color key="value" red="1" green="0.61266960410369598" blue="0.57380924976125414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="9jd-3O-rUs" kind="relationship" relationship="viewControllers" id="uGI-VQ-1u2"/>
@@ -143,7 +217,7 @@
         <scene sceneID="hDB-M9-Hmz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9jd-3O-rUs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="menu" id="m0u-1l-V1d">
+                    <tabBarItem key="tabBarItem" title="" image="home" id="m0u-1l-V1d">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -207,7 +281,7 @@
                     <view key="view" contentMode="scaleToFill" id="HFW-y3-cHD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.71372549019607845" green="1" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tGH-5h-EKR"/>
                     </view>
                     <navigationItem key="navigationItem" id="xRr-me-ZZq"/>
@@ -242,7 +316,7 @@
                     <view key="view" contentMode="scaleToFill" id="ppo-4M-i6V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.71372549019607845" green="1" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="47U-7w-PPY"/>
                     </view>
                     <navigationItem key="navigationItem" id="NWu-Sz-3Kj"/>
@@ -278,7 +352,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.71372549019607845" green="1" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YTM-Qy-ZJN" firstAttribute="top" secondItem="4Yg-Tb-KRc" secondAttribute="top" constant="20" id="0LT-OY-KzW"/>
                             <constraint firstItem="4Yg-Tb-KRc" firstAttribute="trailing" secondItem="zSq-bp-Qkv" secondAttribute="trailing" constant="16" id="2vE-L1-see"/>
@@ -376,13 +450,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSJ-8n-RSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="yVr-8m-GCs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2910" y="939"/>
+            <point key="canvasLocation" x="4258" y="939"/>
         </scene>
     </scenes>
     <resources>
         <image name="dolar-bulb" width="29" height="30"/>
+        <image name="home" width="30" height="24"/>
         <image name="magnifying-glass" width="30" height="30"/>
-        <image name="menu" width="30" height="19"/>
         <image name="placeholder" width="640" height="480"/>
         <image name="plus-button" width="32" height="32"/>
         <image name="recycle-icon" width="30" height="28"/>
