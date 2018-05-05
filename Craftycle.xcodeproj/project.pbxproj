@@ -44,6 +44,8 @@
 		6A4B22F9209A392E00C838AD /* Sell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B22F8209A392E00C838AD /* Sell.swift */; };
 		6A4B22FB209A3FFE00C838AD /* SaleTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B22FA209A3FFE00C838AD /* SaleTabTableViewCell.swift */; };
 		718076408DA6C329263A8256 /* Pods_CraftycleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891956E30E7AC27DF7458ED9 /* Pods_CraftycleUITests.framework */; };
+		8C0BF22E209C70550092A2D3 /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF22D209C70550092A2D3 /* MarketItem.swift */; };
+		8C0BF230209C710B0092A2D3 /* CreateMarketItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF22F209C710B0092A2D3 /* CreateMarketItemViewController.swift */; };
 		97A62E1AE5B7401AEF47A159 /* Pods_CraftycleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75D0D81D0D7CD5902A7D797 /* Pods_CraftycleTests.framework */; };
 		FC0BD030056218670A46ABB6 /* Pods_Craftycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA4F5627F9879387524D90D /* Pods_Craftycle.framework */; };
 /* End PBXBuildFile section */
@@ -113,6 +115,8 @@
 		763D9641DFD7FEB59B2D0CE9 /* Pods-CraftycleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleTests/Pods-CraftycleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D4232FB524269A832351E51 /* Pods-Craftycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craftycle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Craftycle/Pods-Craftycle.debug.xcconfig"; sourceTree = "<group>"; };
 		891956E30E7AC27DF7458ED9 /* Pods_CraftycleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CraftycleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C0BF22D209C70550092A2D3 /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
+		8C0BF22F209C710B0092A2D3 /* CreateMarketItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMarketItemViewController.swift; sourceTree = "<group>"; };
 		8EA4F5627F9879387524D90D /* Pods_Craftycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Craftycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75D0D81D0D7CD5902A7D797 /* Pods_CraftycleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CraftycleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB3882219A04B166C796E6C /* Pods-CraftycleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftycleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CraftycleTests/Pods-CraftycleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +276,7 @@
 			children = (
 				258787412086C63E009EADC9 /* Category.swift */,
 				2561858120930D2200EC788B /* Item.swift */,
+				8C0BF22D209C70550092A2D3 /* MarketItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				6A4B22F6209A375D00C838AD /* SellTableViewController.swift */,
 				6A4B22FA209A3FFE00C838AD /* SaleTabTableViewCell.swift */,
 				6A4B22F8209A392E00C838AD /* Sell.swift */,
+				8C0BF22F209C710B0092A2D3 /* CreateMarketItemViewController.swift */,
 			);
 			path = Sell;
 			sourceTree = "<group>";
@@ -639,6 +645,7 @@
 				2561858220930D2200EC788B /* Item.swift in Sources */,
 				25F47C0520868BFB00F6CB8D /* AuthenticatedService.swift in Sources */,
 				2587873F2086C5F6009EADC9 /* CategoryService.swift in Sources */,
+				8C0BF22E209C70550092A2D3 /* MarketItem.swift in Sources */,
 				258787482086CE70009EADC9 /* CategoryViewController.swift in Sources */,
 				6A4B22FB209A3FFE00C838AD /* SaleTabTableViewCell.swift in Sources */,
 				2587873B2086C246009EADC9 /* BaseWebService.swift in Sources */,
@@ -658,6 +665,7 @@
 				2587873D2086C3F2009EADC9 /* BaseResponse.swift in Sources */,
 				2566A45B2083A41000775154 /* Craftycle.xcdatamodeld in Sources */,
 				258787442086C6BA009EADC9 /* WebServiceError.swift in Sources */,
+				8C0BF230209C710B0092A2D3 /* CreateMarketItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
