@@ -65,6 +65,12 @@ class CreateMarketItemViewController: UIViewController {
         updateUploadButton()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 260, right: 0)
+    }
+    
     // MARK: Helper methods
     fileprivate func setup() {
         // UITableView

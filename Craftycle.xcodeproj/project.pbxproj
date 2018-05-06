@@ -53,6 +53,9 @@
 		25B49CB2209EC3A50070439F /* BasicDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CB1209EC3A50070439F /* BasicDataSource.swift */; };
 		25B49CB4209EC3F90070439F /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CB3209EC3F90070439F /* MarketItem.swift */; };
 		25B49CBA209F37C90070439F /* mymnist.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CB9209F37C80070439F /* mymnist.mlmodel */; };
+		25B49CBD209F84E60070439F /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CBC209F84E60070439F /* ClassificationViewController.swift */; };
+		25B49CBF209F85E60070439F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CBE209F85E60070439F /* String.swift */; };
+		25B49CC9209F98F10070439F /* NetworkingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CC8209F98F10070439F /* NetworkingTest.swift */; };
 		25F47C0520868BFB00F6CB8D /* AuthenticatedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */; };
 		25F47C0620868BFB00F6CB8D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0020868BFB00F6CB8D /* Request.swift */; };
 		25F47C0720868BFB00F6CB8D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0120868BFB00F6CB8D /* Response.swift */; };
@@ -73,6 +76,13 @@
 			remoteInfo = Craftycle;
 		};
 		2566A4722083A41100775154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2566A4472083A41000775154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2566A44E2083A41000775154;
+			remoteInfo = Craftycle;
+		};
+		25B49CCB209F98F10070439F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2566A4472083A41000775154 /* Project object */;
 			proxyType = 1;
@@ -138,6 +148,11 @@
 		25B49CB1209EC3A50070439F /* BasicDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDataSource.swift; sourceTree = "<group>"; };
 		25B49CB3209EC3F90070439F /* MarketItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
 		25B49CB9209F37C80070439F /* mymnist.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mymnist.mlmodel; sourceTree = "<group>"; };
+		25B49CBC209F84E60070439F /* ClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
+		25B49CBE209F85E60070439F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		25B49CC6209F98F10070439F /* NetworkingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B49CC8209F98F10070439F /* NetworkingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTest.swift; sourceTree = "<group>"; };
+		25B49CCA209F98F10070439F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedService.swift; sourceTree = "<group>"; };
 		25F47C0020868BFB00F6CB8D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		25F47C0120868BFB00F6CB8D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -176,6 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				718076408DA6C329263A8256 /* Pods_CraftycleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B49CC3209F98F10070439F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +247,7 @@
 		256185832093189C00EC788B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25B49CBB209F84BD0070439F /* Classification */,
 				25B49C9C209EC3630070439F /* Sell */,
 				25B49C97209EC34C0070439F /* Location */,
 				25B49C92209EC3460070439F /* Tip */,
@@ -258,6 +281,7 @@
 				258485492098D089008B8EE6 /* Data */,
 				2566A4692083A41100775154 /* CraftycleTests */,
 				2566A4742083A41100775154 /* CraftycleUITests */,
+				25B49CC7209F98F10070439F /* NetworkingTest */,
 				2566A4502083A41000775154 /* Products */,
 				1BDCE3B913A4DF54A24EDA25 /* Pods */,
 				64F820C82D2DA16B4FD9499C /* Frameworks */,
@@ -270,6 +294,7 @@
 				2566A44F2083A41000775154 /* Craftycle.app */,
 				2566A4662083A41100775154 /* CraftycleTests.xctest */,
 				2566A4712083A41100775154 /* CraftycleUITests.xctest */,
+				25B49CC6209F98F10070439F /* NetworkingTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,6 +369,7 @@
 				253C5FC420929E2200CF868B /* CGFloat.swift */,
 				253C5FC620929E4900CF868B /* CGSize.swift */,
 				253C5FCB2092AB7E00CF868B /* UIWindow.swift */,
+				25B49CBE209F85E60070439F /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -395,6 +421,23 @@
 				25B49CB1209EC3A50070439F /* BasicDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		25B49CBB209F84BD0070439F /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				25B49CBC209F84E60070439F /* ClassificationViewController.swift */,
+			);
+			path = Classification;
+			sourceTree = "<group>";
+		};
+		25B49CC7209F98F10070439F /* NetworkingTest */ = {
+			isa = PBXGroup;
+			children = (
+				25B49CC8209F98F10070439F /* NetworkingTest.swift */,
+				25B49CCA209F98F10070439F /* Info.plist */,
+			);
+			path = NetworkingTest;
 			sourceTree = "<group>";
 		};
 		25F47C0B20868C7A00F6CB8D /* Networking */ = {
@@ -499,6 +542,24 @@
 			productReference = 2566A4712083A41100775154 /* CraftycleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		25B49CC5209F98F10070439F /* NetworkingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B49CCD209F98F20070439F /* Build configuration list for PBXNativeTarget "NetworkingTest" */;
+			buildPhases = (
+				25B49CC2209F98F10070439F /* Sources */,
+				25B49CC3209F98F10070439F /* Frameworks */,
+				25B49CC4209F98F10070439F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B49CCC209F98F10070439F /* PBXTargetDependency */,
+			);
+			name = NetworkingTest;
+			productName = NetworkingTest;
+			productReference = 25B49CC6209F98F10070439F /* NetworkingTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -523,6 +584,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2566A44E2083A41000775154;
 					};
+					25B49CC5209F98F10070439F = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2566A44E2083A41000775154;
+					};
 				};
 			};
 			buildConfigurationList = 2566A44A2083A41000775154 /* Build configuration list for PBXProject "Craftycle" */;
@@ -541,6 +607,7 @@
 				2566A44E2083A41000775154 /* Craftycle */,
 				2566A4652083A41100775154 /* CraftycleTests */,
 				2566A4702083A41100775154 /* CraftycleUITests */,
+				25B49CC5209F98F10070439F /* NetworkingTest */,
 			);
 		};
 /* End PBXProject section */
@@ -566,6 +633,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2566A46F2083A41100775154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B49CC4209F98F10070439F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -749,6 +823,7 @@
 				2587873B2086C246009EADC9 /* BaseWebService.swift in Sources */,
 				258787462086C7AE009EADC9 /* BaseRequest.swift in Sources */,
 				25085DD0209C05D8007A57F8 /* MachineLearningResultViewController.swift in Sources */,
+				25B49CBD209F84E60070439F /* ClassificationViewController.swift in Sources */,
 				25F47C0620868BFB00F6CB8D /* Request.swift in Sources */,
 				25B49CA6209EC3640070439F /* CreateMarketItemDataSource.swift in Sources */,
 				25F47C0920868BFB00F6CB8D /* WebServiceExtensions.swift in Sources */,
@@ -776,6 +851,7 @@
 				2566A45B2083A41000775154 /* Craftycle.xcdatamodeld in Sources */,
 				258787442086C6BA009EADC9 /* WebServiceError.swift in Sources */,
 				25B49C9A209EC34C0070439F /* LocationPickerViewController.swift in Sources */,
+				25B49CBF209F85E60070439F /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +871,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25B49CC2209F98F10070439F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B49CC9209F98F10070439F /* NetworkingTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -807,6 +891,11 @@
 			isa = PBXTargetDependency;
 			target = 2566A44E2083A41000775154 /* Craftycle */;
 			targetProxy = 2566A4722083A41100775154 /* PBXContainerItemProxy */;
+		};
+		25B49CCC209F98F10070439F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2566A44E2083A41000775154 /* Craftycle */;
+			targetProxy = 25B49CCB209F98F10070439F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -953,7 +1042,7 @@
 				DEVELOPMENT_TEAM = YEA93CRG3C;
 				HOST_NAME = "Debug Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.craftycle.Craftycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -974,7 +1063,7 @@
 				DEVELOPMENT_TEAM = YEA93CRG3C;
 				HOST_NAME = "Release Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.craftycle.Craftycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1051,6 +1140,36 @@
 			};
 			name = Release;
 		};
+		25B49CCE209F98F20070439F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetworkingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.craftycle.NetworkingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craftycle.app/Craftycle";
+			};
+			name = Debug;
+		};
+		25B49CCF209F98F20070439F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetworkingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.craftycle.NetworkingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craftycle.app/Craftycle";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1086,6 +1205,15 @@
 			buildConfigurations = (
 				2566A4812083A41100775154 /* Debug */,
 				2566A4822083A41100775154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B49CCD209F98F20070439F /* Build configuration list for PBXNativeTarget "NetworkingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B49CCE209F98F20070439F /* Debug */,
+				25B49CCF209F98F20070439F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

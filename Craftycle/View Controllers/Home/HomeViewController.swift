@@ -48,8 +48,12 @@ class HomeViewController: UIViewController {
     @objc func refresh(_ sender: Any) {
         // Do refresh content
         itemsService.getAllItems(successBlock: {[weak self] (items) in
-            self?.items.append(contentsOf: items)
+            var newItems: [Item] = []
+            newItems.append(contentsOf: items)
+            newItems.append(contentsOf: self?.defaultItems ?? [])
+            self?.items = newItems
             self?.collectionView.reloadData()
+            
             self?.refreshControl.endRefreshing()
             }, failureBlock: {[weak self] _ in
                 

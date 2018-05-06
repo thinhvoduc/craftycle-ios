@@ -62,4 +62,8 @@ extension MarketItemInfoTableViewCell: UITextFieldDelegate {
             delegate?.marketItemInfoTableViewCellDidSelectLocationTextField(self, didEndEditingEmail: email)
         }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
+    }
 }
