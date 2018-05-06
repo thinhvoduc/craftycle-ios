@@ -37,6 +37,23 @@
 		258787482086CE70009EADC9 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258787472086CE70009EADC9 /* CategoryViewController.swift */; };
 		2587874C2086CF28009EADC9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587874A2086CF28009EADC9 /* Image.swift */; };
 		2587874F2086CF99009EADC9 /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */; };
+		25B49C95209EC3460070439F /* TipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49C93209EC3460070439F /* TipManager.swift */; };
+		25B49C96209EC3460070439F /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49C94209EC3460070439F /* TipViewController.swift */; };
+		25B49C9A209EC34C0070439F /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49C98209EC34C0070439F /* LocationPickerViewController.swift */; };
+		25B49C9B209EC34C0070439F /* LocationResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49C99209EC34C0070439F /* LocationResultsViewController.swift */; };
+		25B49CA6209EC3640070439F /* CreateMarketItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49C9D209EC3630070439F /* CreateMarketItemDataSource.swift */; };
+		25B49CA7209EC3640070439F /* CreateMarketItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49C9E209EC3630070439F /* CreateMarketItemViewController.swift */; };
+		25B49CA8209EC3640070439F /* Sell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49C9F209EC3630070439F /* Sell.swift */; };
+		25B49CA9209EC3640070439F /* SellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CA0209EC3630070439F /* SellTableViewController.swift */; };
+		25B49CAA209EC3640070439F /* SaleTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CA1209EC3630070439F /* SaleTabTableViewCell.swift */; };
+		25B49CAB209EC3640070439F /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CA3209EC3630070439F /* ImageTableViewCell.swift */; };
+		25B49CAC209EC3640070439F /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CA4209EC3630070439F /* PickerTableViewCell.swift */; };
+		25B49CAD209EC3640070439F /* MarketItemInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CA5209EC3630070439F /* MarketItemInfoTableViewCell.swift */; };
+		25B49CAF209EC3830070439F /* CLPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CAE209EC3830070439F /* CLPlacemark.swift */; };
+		25B49CB2209EC3A50070439F /* BasicDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CB1209EC3A50070439F /* BasicDataSource.swift */; };
+		25B49CB4209EC3F90070439F /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CB3209EC3F90070439F /* MarketItem.swift */; };
+		25B49CB6209EC57C0070439F /* mymnist.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CB5209EC57C0070439F /* mymnist.mlmodel */; };
+		25B49CB8209EC6A10070439F /* craftycle.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 25B49CB7209EC6A10070439F /* craftycle.mlmodel */; };
 		25F47C0520868BFB00F6CB8D /* AuthenticatedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */; };
 		25F47C0620868BFB00F6CB8D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0020868BFB00F6CB8D /* Request.swift */; };
 		25F47C0720868BFB00F6CB8D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F47C0120868BFB00F6CB8D /* Response.swift */; };
@@ -106,6 +123,23 @@
 		2587874A2086CF28009EADC9 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
 		2598C10E208D53F5009A8572 /* Craftycle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Craftycle-Bridging-Header.h"; sourceTree = "<group>"; };
+		25B49C93209EC3460070439F /* TipManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipManager.swift; sourceTree = "<group>"; };
+		25B49C94209EC3460070439F /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		25B49C98209EC34C0070439F /* LocationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
+		25B49C99209EC34C0070439F /* LocationResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationResultsViewController.swift; sourceTree = "<group>"; };
+		25B49C9D209EC3630070439F /* CreateMarketItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMarketItemDataSource.swift; sourceTree = "<group>"; };
+		25B49C9E209EC3630070439F /* CreateMarketItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMarketItemViewController.swift; sourceTree = "<group>"; };
+		25B49C9F209EC3630070439F /* Sell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sell.swift; sourceTree = "<group>"; };
+		25B49CA0209EC3630070439F /* SellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellTableViewController.swift; sourceTree = "<group>"; };
+		25B49CA1209EC3630070439F /* SaleTabTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleTabTableViewCell.swift; sourceTree = "<group>"; };
+		25B49CA3209EC3630070439F /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		25B49CA4209EC3630070439F /* PickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		25B49CA5209EC3630070439F /* MarketItemInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketItemInfoTableViewCell.swift; sourceTree = "<group>"; };
+		25B49CAE209EC3830070439F /* CLPlacemark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlacemark.swift; sourceTree = "<group>"; };
+		25B49CB1209EC3A50070439F /* BasicDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDataSource.swift; sourceTree = "<group>"; };
+		25B49CB3209EC3F90070439F /* MarketItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
+		25B49CB5209EC57C0070439F /* mymnist.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mymnist.mlmodel; sourceTree = "<group>"; };
+		25B49CB7209EC6A10070439F /* craftycle.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = craftycle.mlmodel; path = Models/craftycle.mlmodel; sourceTree = "<group>"; };
 		25F47BFF20868BFB00F6CB8D /* AuthenticatedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedService.swift; sourceTree = "<group>"; };
 		25F47C0020868BFB00F6CB8D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		25F47C0120868BFB00F6CB8D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -193,6 +227,9 @@
 		256185832093189C00EC788B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25B49C9C209EC3630070439F /* Sell */,
+				25B49C97209EC34C0070439F /* Location */,
+				25B49C92209EC3460070439F /* Tip */,
 				25085DCE209C05B8007A57F8 /* MachineLearning */,
 				25618584209318AA00EC788B /* Home */,
 			);
@@ -242,6 +279,7 @@
 		2566A4512083A41000775154 /* Craftycle */ = {
 			isa = PBXGroup;
 			children = (
+				25B49CB0209EC3A50070439F /* DataSource */,
 				25085DBF209C00CB007A57F8 /* Others */,
 				256185832093189C00EC788B /* View Controllers */,
 				253C5FC820929F5800CF868B /* Managers */,
@@ -252,6 +290,8 @@
 				2566A4542083A41000775154 /* MainTabBarController.swift */,
 				258787472086CE70009EADC9 /* CategoryViewController.swift */,
 				2587874E2086CF99009EADC9 /* NewCategoryViewController.swift */,
+				25B49CB7209EC6A10070439F /* craftycle.mlmodel */,
+				25B49CB5209EC57C0070439F /* mymnist.mlmodel */,
 				2566A4562083A41000775154 /* Main.storyboard */,
 				2566A45C2083A41100775154 /* Assets.xcassets */,
 				2584854E2098D875008B8EE6 /* Items.xcassets */,
@@ -292,6 +332,7 @@
 		258787402086C62D009EADC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				25B49CB3209EC3F90070439F /* MarketItem.swift */,
 				258787412086C63E009EADC9 /* Category.swift */,
 				2561858120930D2200EC788B /* Item.swift */,
 			);
@@ -301,12 +342,62 @@
 		258787492086CF18009EADC9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				25B49CAE209EC3830070439F /* CLPlacemark.swift */,
 				2587874A2086CF28009EADC9 /* Image.swift */,
 				253C5FC420929E2200CF868B /* CGFloat.swift */,
 				253C5FC620929E4900CF868B /* CGSize.swift */,
 				253C5FCB2092AB7E00CF868B /* UIWindow.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25B49C92209EC3460070439F /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				25B49C93209EC3460070439F /* TipManager.swift */,
+				25B49C94209EC3460070439F /* TipViewController.swift */,
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
+		25B49C97209EC34C0070439F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				25B49C98209EC34C0070439F /* LocationPickerViewController.swift */,
+				25B49C99209EC34C0070439F /* LocationResultsViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		25B49C9C209EC3630070439F /* Sell */ = {
+			isa = PBXGroup;
+			children = (
+				25B49C9D209EC3630070439F /* CreateMarketItemDataSource.swift */,
+				25B49C9E209EC3630070439F /* CreateMarketItemViewController.swift */,
+				25B49C9F209EC3630070439F /* Sell.swift */,
+				25B49CA0209EC3630070439F /* SellTableViewController.swift */,
+				25B49CA1209EC3630070439F /* SaleTabTableViewCell.swift */,
+				25B49CA2209EC3630070439F /* Views */,
+			);
+			path = Sell;
+			sourceTree = "<group>";
+		};
+		25B49CA2209EC3630070439F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25B49CA3209EC3630070439F /* ImageTableViewCell.swift */,
+				25B49CA4209EC3630070439F /* PickerTableViewCell.swift */,
+				25B49CA5209EC3630070439F /* MarketItemInfoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25B49CB0209EC3A50070439F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				25B49CB1209EC3A50070439F /* BasicDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		25F47C0B20868C7A00F6CB8D /* Networking */ = {
@@ -643,33 +734,50 @@
 			files = (
 				25618586209318E800EC788B /* HomeViewController.swift in Sources */,
 				2566A4552083A41000775154 /* MainTabBarController.swift in Sources */,
+				25B49CB2209EC3A50070439F /* BasicDataSource.swift in Sources */,
 				2587874F2086CF99009EADC9 /* NewCategoryViewController.swift in Sources */,
 				253C5FCA20929FAA00CF868B /* LoadingManager.swift in Sources */,
 				25F47C0820868BFB00F6CB8D /* Service.swift in Sources */,
 				256185892093192C00EC788B /* HomeCollectionViewCell.swift in Sources */,
 				2561858220930D2200EC788B /* Item.swift in Sources */,
+				25B49CAF209EC3830070439F /* CLPlacemark.swift in Sources */,
 				25F47C0520868BFB00F6CB8D /* AuthenticatedService.swift in Sources */,
+				25B49CAD209EC3640070439F /* MarketItemInfoTableViewCell.swift in Sources */,
+				25B49CA7209EC3640070439F /* CreateMarketItemViewController.swift in Sources */,
 				2587873F2086C5F6009EADC9 /* CategoryService.swift in Sources */,
 				258787482086CE70009EADC9 /* CategoryViewController.swift in Sources */,
+				25B49CB4209EC3F90070439F /* MarketItem.swift in Sources */,
 				2587873B2086C246009EADC9 /* BaseWebService.swift in Sources */,
 				258787462086C7AE009EADC9 /* BaseRequest.swift in Sources */,
 				25085DD0209C05D8007A57F8 /* MachineLearningResultViewController.swift in Sources */,
+				25B49CB6209EC57C0070439F /* mymnist.mlmodel in Sources */,
 				25F47C0620868BFB00F6CB8D /* Request.swift in Sources */,
+				25B49CA6209EC3640070439F /* CreateMarketItemDataSource.swift in Sources */,
 				25F47C0920868BFB00F6CB8D /* WebServiceExtensions.swift in Sources */,
+				25B49C95209EC3460070439F /* TipManager.swift in Sources */,
 				25085DCD209C0513007A57F8 /* DropDownTransitionAnimator.m in Sources */,
 				2561858020930C7400EC788B /* ItemService.swift in Sources */,
 				25F47C0A20868BFB00F6CB8D /* ServiceConfiguration.swift in Sources */,
+				25B49CB8209EC6A10070439F /* craftycle.mlmodel in Sources */,
+				25B49CAC209EC3640070439F /* PickerTableViewCell.swift in Sources */,
+				25B49CAB209EC3640070439F /* ImageTableViewCell.swift in Sources */,
+				25B49C9B209EC34C0070439F /* LocationResultsViewController.swift in Sources */,
+				25B49CA9209EC3640070439F /* SellTableViewController.swift in Sources */,
 				2566A4532083A41000775154 /* AppDelegate.swift in Sources */,
 				253C5FC720929E4900CF868B /* CGSize.swift in Sources */,
 				2587874C2086CF28009EADC9 /* Image.swift in Sources */,
+				25B49CAA209EC3640070439F /* SaleTabTableViewCell.swift in Sources */,
+				25B49CA8209EC3640070439F /* Sell.swift in Sources */,
 				253C5FCC2092AB7E00CF868B /* UIWindow.swift in Sources */,
 				25085DCA209C04FE007A57F8 /* BackgroundPresentationController.m in Sources */,
+				25B49C96209EC3460070439F /* TipViewController.swift in Sources */,
 				258787422086C63E009EADC9 /* Category.swift in Sources */,
 				253C5FC520929E2200CF868B /* CGFloat.swift in Sources */,
 				25F47C0720868BFB00F6CB8D /* Response.swift in Sources */,
 				2587873D2086C3F2009EADC9 /* BaseResponse.swift in Sources */,
 				2566A45B2083A41000775154 /* Craftycle.xcdatamodeld in Sources */,
 				258787442086C6BA009EADC9 /* WebServiceError.swift in Sources */,
+				25B49C9A209EC34C0070439F /* LocationPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

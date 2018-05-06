@@ -130,6 +130,17 @@ final class LoadingManager: NSObject {
         }
     }
     
+    func dismiss(animated: Bool = true) {
+        UIView.animate(withDuration: animated ? 0.2 : 0.0, animations: {
+            self.dimmingBackgroundView.alpha = 0
+        }) { _ in
+            self.dimmingBackgroundView.removeFromSuperview()
+            self.isLoading = false
+            self.dimmingBackgroundView.alpha = 1.0
+        }
+        
+    }
+    
     // MARK: Private methods
     fileprivate func setup() {
             
@@ -176,16 +187,5 @@ final class LoadingManager: NSObject {
         if let newImage = image {
             imageView.image = newImage
         }
-    }
-    
-    fileprivate func dismiss() {
-        UIView.animate(withDuration: 0.2, animations: {
-            self.dimmingBackgroundView.alpha = 0
-        }) { _ in
-            self.dimmingBackgroundView.removeFromSuperview()
-            self.isLoading = false
-            self.dimmingBackgroundView.alpha = 1.0
-        }
-       
     }
 }
