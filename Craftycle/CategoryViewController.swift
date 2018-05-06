@@ -24,7 +24,7 @@ class CategoryViewController: UIViewController {
     //ML request
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
-            let model = try VNCoreMLModel(for: craftycle().model)
+            let model = try VNCoreMLModel(for: mymnist().model)
             
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
@@ -35,6 +35,7 @@ class CategoryViewController: UIViewController {
             fatalError("Failed to load Vision ML model: \(error)")
         }
     }()
+    
     func updateClassifications(for image: UIImage) {
         classificationLabel.text = "Classifying..."
         
@@ -55,6 +56,7 @@ class CategoryViewController: UIViewController {
             }
         }
     }
+    
     func processClassifications(for request: VNRequest, error: Error?) {
         DispatchQueue.main.async {
             guard let results = request.results else {
@@ -73,14 +75,11 @@ class CategoryViewController: UIViewController {
                     // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
                     return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
                 }
-                self.classificationLabel.text = "Classification:\n" + descriptions.joined(separator: "\n")
-                
+                let text = "Classification:\n" + descriptions.joined(separator: "\n")
+                self.classificationLabel.text = text
             }
         }
     }
-        
-    
-    
     
     /// Category source
     fileprivate var categories: [Category] = []
