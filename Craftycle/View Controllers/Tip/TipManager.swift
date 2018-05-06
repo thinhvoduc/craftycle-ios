@@ -37,7 +37,7 @@ class TipManager {
             """
         case .paper:
             return """
-            - Paper and cardboard is recycled separately.
+            - Paper and cardboard are recycled separately.
             - You can craft for example origami, cards, bookmarks from paper.
             - Cardboard can be used in many ways in craftings.
             - You can sell or give away your materials on our sellpage!
@@ -49,7 +49,7 @@ class TipManager {
             """
         case .fabric:
             return """
-            - Clothes that are good in shape and clean can be sold at flea markets or taken to clothing collection points.
+            - Clothes that are in good shape and clean can be sold at flea markets or taken to clothing collection points.
             - From old fabrics you can make blankets, toys or rags.
             - You can sell or give away your materials on our sellpage!
             """
