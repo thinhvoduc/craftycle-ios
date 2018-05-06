@@ -26,35 +26,50 @@ class TipManager {
         switch categoryType {
         case .odlDevice:
             return """
-            This is tips for old device
+            - Recycle as problematic waste.
+            - Parts can be used as spare.
+            - You can sell or give away your materials on our sellpage!
             """
         case .wood:
             return """
-            This is tips for wood
+            - Take to recycling points which handle wood.
+            - You can sell or give away your materials on our sellpage!
             """
         case .paper:
             return """
-            This is tips for paper
+            - Paper and cardboard are recycled separately.
+            - You can craft for example origami, cards, bookmarks from paper.
+            - Cardboard can be used in many ways in craftings.
+            - You can sell or give away your materials on our sellpage!
             """
         case .metal:
             return """
-            This is tips for metal
+            - Small everyday metal can be recycled in most recycling points, but bigger stuff has to be taken to special recycling points.
+            - You can sell or give away your materials on our sellpage!
             """
         case .fabric:
             return """
-            This is tips for fabric
+            - Clothes that are in good shape and clean can be sold at flea markets or taken to clothing collection points.
+            - From old fabrics you can make blankets, toys or rags.
+            - You can sell or give away your materials on our sellpage!
             """
         case .decoration:
             return """
-            This is tips for decoration
+            - Sort depending on the material into glass, metal, plastic etc. and take them to your closest recycling point.
+            - From glass bottles you can make candle stands and from colorful glass jewellery.
+            - You can sell or give away your materials on our sellpage!
             """
         case .everydayWaste:
             return """
-            This is tips for everyday waste
+            - Sort depending on the material into plastic, metal, etc. and take them to your closest recycling point.
+            - You can make bags from coffee packets and other packing materials.
+            - You can sell or give away your materials on our sellpage!
             """
         case .problematicWaste:
             return """
-            This is tips for problematic waste
+            - Never throw problematic waste with mixed waste.
+            - Separate batteries, light bulbs, devices etc. on their own and take them to recycling points which handle problematic waste.
+            - You can sell or give away your materials on our sellpage!
             """
         }
     }
