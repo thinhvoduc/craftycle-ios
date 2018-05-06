@@ -9,7 +9,7 @@
 import UIKit
 
 class SellTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     var sellItems = [Sell]()
     
@@ -19,7 +19,8 @@ class SellTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         
-        let cell = Sell(sellOrCraft: "as", photo: #imageLiteral(resourceName: "placeholder"), place: "as", price: "as")
+        // TODO: Remove this
+        let cell = Sell(sellOrCraft: "", photo: #imageLiteral(resourceName: "bowl"), place: "Espoo, Finland", price: 5, emailContact: "riiko@gmail.com")
         sellItems.append(cell!)
     }
 
@@ -38,13 +39,13 @@ class SellTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "SaleTabTableViewCell", for: indexPath)  as! SaleTabTableViewCell
         
         let selling = sellItems[indexPath.row]
-        
+        cell.infoLabel.text = String(describing: selling)
         cell.imagePlace.image = selling.photo
         
         return cell
     }
     
-    @IBAction func unwind(sender: UIStoryboardSegue) {
+    @IBAction func unwindViewController(sender: UIStoryboardSegue) {
         guard let vc = sender.source as? CreateMarketItemViewController, let sellItem = vc.sellItem else {
             return
         }
@@ -58,3 +59,11 @@ class SellTableViewController: UIViewController, UITableViewDelegate, UITableVie
         return 240
     }
 }
+
+// MARK: - ImageTableViewCellDelegate methods
+extension SellTableViewController: ImageTableViewCellDelegate {
+    func imageTabeViewCellDidTapImageView(_ tableViewCell: ImageTableViewCell) {
+        print("Did tapped")
+    }
+}
+

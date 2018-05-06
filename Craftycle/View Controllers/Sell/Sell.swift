@@ -8,32 +8,28 @@
 
 import UIKit
 
+// TODO: Remove this Sell class
 class Sell {
-    var sellOrCraft: String
+    var sellOrCraft: String?
     var photo: UIImage?
-    var price: String
-    var place: String
-    
+    var price: Double?
+    var place: String?
+    var emailContact: String?
     //MARK: Initialization
-    init?(sellOrCraft: String, photo: UIImage?, place: String, price: String) {
-        
-        // The labels must not be empty
-        guard !sellOrCraft.isEmpty else {
-            return nil
-        }
-        guard !price.isEmpty else {
-            return nil
-        }
-        guard !place.isEmpty else {
-            return nil
-        }
+    init?(sellOrCraft: String, photo: UIImage?, place: String?, price: Double?, emailContact: String?) {
         
         
         self.sellOrCraft = sellOrCraft
         self.photo = photo
         self.place = place
         self.price = price
+        self.emailContact = emailContact
         
-        
+    }
+}
+
+extension Sell: CustomStringConvertible {
+    var description: String {
+        return "\(price ?? 0) €, \(place ?? "Unknown Location"), \(emailContact ?? "Unknown Contact")"
     }
 }

@@ -12,9 +12,7 @@ class SaleTabTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var imagePlace: UIImageView!
-    @IBOutlet weak var sellOrCraftLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var placeLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
