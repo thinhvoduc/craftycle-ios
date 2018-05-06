@@ -7,6 +7,7 @@ target 'Craftycle' do
 
   # Pods for Craftycle
   pod 'DTCircularActivityIndicator'
+  pod 'SDWebImage', '~> 4.0'
 
   target 'CraftycleTests' do
     inherit! :search_paths

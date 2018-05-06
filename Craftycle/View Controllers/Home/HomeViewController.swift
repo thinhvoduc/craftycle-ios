@@ -13,7 +13,9 @@ class HomeViewController: UIViewController {
     
     private lazy var itemsService = ItemService(ServiceConfiguration.defaultAppConfiguration()!)
     
-    var items: [Item] = Item.samples() ?? []
+    let defaultItems = Item.samples() ?? []
+    
+    var items: [Item] = []
     
     fileprivate let refreshControl: UIRefreshControl = {
         let control = UIRefreshControl()
@@ -25,6 +27,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        items.append(contentsOf: defaultItems)
+        
         collectionView.addSubview(refreshControl)
         
         collectionView.dataSource = self
@@ -32,7 +36,10 @@ class HomeViewController: UIViewController {
         
         
         itemsService.getAllItems(successBlock: {[weak self] (items) in
-            self?.items.append(contentsOf: items)
+            var newItems: [Item] = []
+            newItems.append(contentsOf: items)
+            newItems.append(contentsOf: self?.defaultItems ?? [])
+            self?.items = newItems
             self?.collectionView.reloadData()
             }, failureBlock: nil)
     }

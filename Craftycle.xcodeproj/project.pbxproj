@@ -616,10 +616,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Craftycle/Pods-Craftycle-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DTCircularActivityIndicator/DTCircularActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCircularActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -950,8 +952,9 @@
 			baseConfigurationReference = 7D4232FB524269A832351E51 /* Pods-Craftycle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BASE_URL = "http://localhost:8080/craftycle-backend/webresources/";
+				BASE_URL = "http://routemenow.eu/api/";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YEA93CRG3C;
 				HOST_NAME = "Debug Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -970,8 +973,9 @@
 			baseConfigurationReference = DE4C38D3F41BCFDE31850DDE /* Pods-Craftycle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BASE_URL = "http://localhost:8080/craftycle-backend/webresources/";
+				BASE_URL = "http://routemenow.eu/api/";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YEA93CRG3C;
 				HOST_NAME = "Release Craftycle Server";
 				INFOPLIST_FILE = Craftycle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

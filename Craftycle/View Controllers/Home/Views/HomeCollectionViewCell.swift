@@ -17,6 +17,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         imageView.contentMode = .scaleAspectFill
+        label.layer.cornerRadius = 4
+        label.layer.masksToBounds = true
     }
     
     var item: Item? {
