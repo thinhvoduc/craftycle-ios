@@ -1,0 +1,17 @@
+PODS:
+  - DTCircularActivityIndicator (0.1.0)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+
+DEPENDENCIES:
+  - DTCircularActivityIndicator
+  - SDWebImage (~> 4.0)
+
+SPEC CHECKSUMS:
+  DTCircularActivityIndicator: f7bc3bde9921df6883cc81933a3545197862293b
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+
+PODFILE CHECKSUM: dd0ef7cc807f3c4c1287c8c278c32c17350553ef
+
+COCOAPODS: 1.4.0
